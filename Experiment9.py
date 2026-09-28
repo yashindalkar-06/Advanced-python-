@@ -3,13 +3,13 @@ import re
 
 # Step 2: Store the text containing email addresses
 text = """
-Hello John,
+Hello Yash,
 Please contact us at python@example.com
 or advanced@company.org.
 """
 
 # Step 3: Create a pattern to find email addresses
-pattern = r'[\w\.-]+@[\w\.-]+\.\w+'
+pattern = r'[a-zA-Z0-9.-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]+'
 
 # Step 4: Find all email addresses in the text
 emails = re.findall(pattern, text)
